@@ -111,7 +111,7 @@ Iniciar Gulp para compilar los archivos Sass y JavaScript:
 npm run dev
 ```
 
-### 6. Ejecutar el proyecto
+### 7. Ejecutar el proyecto
 
 En otra terminal, iniciar el servidor de PHP:
 
