@@ -30,9 +30,6 @@ class LoginController {
                     
                     if($auth->validarPasswordAndToken($usuario->password)) {
                         
-                        //Autenticar al usuario
-                        session_start();
-                        
                         $_SESSION["usuario_id"] = $auth->id;
                         $_SESSION["nombre"] = $auth->nombre . ' ' . $auth->apellido;
                         $_SESSION["email"] = $auth->email;
@@ -67,8 +64,6 @@ class LoginController {
     }
     
     public static function logout(Router $router) {
-        
-        //session_start();
 
         $_SESSION = [];
 

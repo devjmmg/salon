@@ -20,7 +20,6 @@ class Router
     public function comprobarRutas()
     {
         
-        // Proteger Rutas...
         session_start();
         
         $currentUrl = strtok($_SERVER["REQUEST_URI"], "?") ?? "/";
