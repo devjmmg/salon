@@ -9,13 +9,10 @@ const cita = {
     hora: "",
     usuario_id: "",
     servicios: []
-    
 }
 
 document.addEventListener('DOMContentLoaded',function ( ){
-    
     iniciarApp();
-    
 });
 
 function iniciarApp() {
@@ -35,9 +32,6 @@ function iniciarApp() {
     horaCliente();
     
     muestraResumen();
-
-    //Admin
-    filtrarCita(); //Filtra las citas dependiendo la fecha
     
 }
 
@@ -287,7 +281,7 @@ function mostrarAlerta(tipo,mensaje,elemento,desaparece = true) {
             
             div.remove();
             
-        },3000);
+        },5000);
         
     }
     
@@ -320,24 +314,19 @@ function muestraResumen() {
     
     //Agregando el nombre
     const campoNombre = document.createElement("P");
-    campoNombre.innerHTML = `<span>Nombre:</span> ${nombre}`;
-    
+    campoNombre.innerHTML = `<span>Nombre: </span> ${nombre}`;
+     
     //Formatear la fecha en español
-    const fechaObj = new Date(fecha);
-    const dia = fechaObj.getDay() + 2; //Cuando se instacia la fecha hay un desface de 1 día y como se va a instaciar 2 veces se suma un 2
-    const mes = fechaObj.getMonth();
-    const year = fechaObj.getFullYear();
-    
-    const fechaUTC = new Date(Date.UTC(year,mes,dia));
-    
+    const fechaObj = new Date(fecha + "T00:00:00");
+
     const opciones = {
         weekday: "long",
         year: "numeric",
         month: "long",
         day: "numeric"
-    }
-    
-    const fechaFormateada = fechaUTC.toLocaleDateString('es-MX',opciones);
+    };
+
+    const fechaFormateada = fechaObj.toLocaleDateString('es-MX', opciones);
     
     //Agregando la fecha
     const campoFecha = document.createElement("P");

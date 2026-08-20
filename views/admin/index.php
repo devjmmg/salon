@@ -88,7 +88,7 @@ if(count($citas) === 0){
 <?php
 
 $script = "
-<script src='build/js/buscador.js'></script>
+    <script src='build/js/buscador.js'></script>
 ";
 
 ?>

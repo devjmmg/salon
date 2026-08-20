@@ -21,7 +21,7 @@ class AdminController {
            exit();
         }
         
-        $consulta = "SELECT c.id, c.hora, concat(u.nombre, u.apellido) AS cliente, u.telefono, u.email, cs.servicio_id, s.nombre AS servicio, s.precio
+        $consulta = "SELECT c.id, c.hora, concat(u.nombre, ' ', u.apellido) AS cliente, u.telefono, u.email, cs.servicio_id, s.nombre AS servicio, s.precio
         FROM citas AS c
         INNER JOIN citasservicios AS cs ON cs.cita_id = c.id
         INNER JOIN servicios AS s ON s.id = cs.servicio_id

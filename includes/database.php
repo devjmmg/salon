@@ -1,6 +1,6 @@
 <?php
 
-$db = new mysqli($_ENV["DB_HOST"],$_ENV["DB_USER"],$_ENV["DB_PASSWORD"],$_ENV["DB_NAME"]);
+$db = new mysqli($_ENV["DB_HOST"],$_ENV["DB_USER"],$_ENV["DB_PASSWORD"],$_ENV["DB_NAME"],$_ENV["DB_PORT"]);
 
 $db->set_charset("utf8");
 

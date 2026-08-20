@@ -1,7 +1,7 @@
 {
-  "name": "app-salon-php-mvc-sass",
+  "name": "salon",
   "version": "1.0.0",
-  "description": "AppSalon - Curso Desarrollo web Completo",
+  "description": "Aplicación web para un salón de cortes de cabello, desarrollada con PHP, MySQL y Sass, que permite gestionar citas y servicios desde un área administrativa.",
   "author": "Juan Manuel @jmmg",
   "main": "index.js",
   "type": "module",

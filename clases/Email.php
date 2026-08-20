@@ -37,11 +37,11 @@ class Email{
             
             // Destinatarios
             //$mail->setFrom("{$correo}","{$nombre}");
-            $mail->setFrom('cuentas@appsalon.com');
-            $mail->addAddress('cuentas@appsalon.com', 'App Salón');
+            $mail->setFrom('cuentas@salon.com');
+            $mail->addAddress('cuentas@salon.com', 'Salón');
             
             // Contenido del correo
-            $mail->Subject = 'Confirmar cuenta de App Salón';
+            $mail->Subject = 'Confirmar cuenta de Salón';
             
             //setHTML
             $mail->isHTML(true);
@@ -82,7 +82,7 @@ class Email{
                                     <div class='container'>
                                         <div class='content'>
                                             <p><strong>Hola:</strong> " . htmlspecialchars($this->nombre) . "</p>
-                                            <p>Has creado tu cuenta en App Salón. Por favor, confírmala haciendo clic en el siguiente enlace:</p>
+                                            <p>Has creado tu cuenta en Salón. Por favor, confírmala haciendo clic en el siguiente enlace:</p>
                                             <p><a class='btn' href='".$_ENV["DOMAIN_URL"]."/confirm_account?token=".urlencode($this->token)."'>Confirmar cuenta</a></p>
                                             <p>Si no creaste esta cuenta, puedes ignorar este mensaje.</p>
                                         </div>
@@ -124,8 +124,8 @@ class Email{
             
             // Destinatarios
             //$mail->setFrom("{$correo}","{$nombre}");
-            $mail->setFrom('cuentas@appsalon.com');
-            $mail->addAddress('cuentas@appsalon.com', 'App Salón');
+            $mail->setFrom('cuentas@salon.com');
+            $mail->addAddress('cuentas@salon.com', 'Salón');
             
             // Contenido del correo
             $mail->Subject = 'Restablecer tu contraseña';

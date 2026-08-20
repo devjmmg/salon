@@ -2,6 +2,8 @@
 
 <?php include_once __DIR__ . "/../templates/barra.php"; ?>
 
+<?php date_default_timezone_set('America/Mexico_City'); ?>
+
 <p class="text-center">Elige tus servicios a continuación</p>
 
 <div id="app">
@@ -62,8 +64,8 @@
 <?php
 
 $script = "
-<script src='build/js/app.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+    <script src='build/js/app.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
 ";
 
 ?>

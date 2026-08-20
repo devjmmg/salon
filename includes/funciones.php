@@ -9,8 +9,7 @@ function debuguear($variable) : string {
 
 // Escapa / Sanitizar el HTML
 function s($html) : string {
-    $s = htmlspecialchars($html);
-    return $s;
+    return htmlspecialchars($html ?? '');
 }
 
 //Función que revisa si el usuario esta autenticado

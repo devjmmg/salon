@@ -34,7 +34,7 @@ class LoginController {
                         session_start();
                         
                         $_SESSION["usuario_id"] = $auth->id;
-                        $_SESSION["nombre"] = $auth->nombre . $auth->apellido;
+                        $_SESSION["nombre"] = $auth->nombre . ' ' . $auth->apellido;
                         $_SESSION["email"] = $auth->email;
                         $_SESSION["login"] = true;
                         
@@ -51,7 +51,6 @@ class LoginController {
                         }
                         
                     }
-                    
                     
                 }
                 

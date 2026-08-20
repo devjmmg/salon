@@ -1,6 +1,6 @@
 {
-    "name": "jmmg/app-salon_php_mvc_js_sass",
-    "description": "Proyecto PHP 8, MVC, SQL, SASS, GULP, Active Record",
+    "name": "jmmg/salon",
+    "description": "Aplicación web para un salón de cortes de cabello, desarrollada con PHP, MySQL y Sass, que permite gestionar citas y servicios desde un área administrativa.",
     "type": "project",
     "autoload": {
         "psr-4": {
